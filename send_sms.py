@@ -1,6 +1,6 @@
 '''
 Trial Account Restrictions
-- Phone number must be verified in https://portal.telesign.com/portal/test-numbers before testing
+- Phone number (only 1) must be verified in https://portal.telesign.com/portal/test-numbers before testing
 
 Message Type:
 OTP - One time passwords
