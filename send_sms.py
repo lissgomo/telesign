@@ -25,7 +25,7 @@ customer_id = os.getenv('CUST_ID')
 api_key = os.getenv('APIKEY')
 
 #Load CSV using Pandas
-csv_data = pd.read_csv ('testing.csv')
+csv_data = pd.read_csv ('sample.csv')
 
 #Creat list of every column and remove headers
 fn_data = csv_data['First Name'].to_csv(index=False)
