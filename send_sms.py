@@ -27,7 +27,7 @@ api_key = os.getenv('APIKEY')
 #Load CSV using Pandas
 csv_data = pd.read_csv ('sample.csv')
 
-#Creat list of every column and remove headers
+#Create list of every column and remove headers
 fn_data = csv_data['First Name'].to_csv(index=False)
 fn_list = [s.strip() for s in fn_data.split('\n') if s]
 fn_list.pop(0)
@@ -51,7 +51,7 @@ msg_list.pop(0)
 #Combines list into one table without headers
 dt = list(zip(fn_list, ln_list, country_list, num_list, msg_list))
 
-#Send sms, provides number the sms was sent to, the message sent, and the response from Telesign
+#Send sms. See the number the sms was sent to, the message sent, and the response from Telesign
 for recipient in dt:
     while dt:
         try:
